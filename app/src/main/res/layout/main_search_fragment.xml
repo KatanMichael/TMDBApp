@@ -71,7 +71,31 @@
 
                 </LinearLayout>
 
+
             </android.support.v7.widget.CardView>
+
+            <RadioGroup android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Movies"
+                        android:textSize="25sp"
+                        android:id="@+id/search_movies_radio"
+                        android:checked="true"
+                />
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tv Shows"
+                        android:textSize="25sp"
+                        android:id="@+id/search_tvShow_radio"
+                />
+
+
+            </RadioGroup>
+
 
             <RelativeLayout
                     android:layout_width="wrap_content"
