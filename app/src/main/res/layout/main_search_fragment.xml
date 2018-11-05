@@ -6,13 +6,13 @@
               android:background="@color/grey_10"
               android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:theme="@style/ThemeOverlay.AppCompat.Light"
-            app:contentInsetStartWithNavigation="0dp"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:layout_height="wrap_content"
+            android:id="@+id/testingCo"
+            android:textSize="20sp"
+            android:text="Just Testing Stuff"
+    />
 
     <RelativeLayout
             android:layout_width="match_parent"
