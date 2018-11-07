@@ -12,7 +12,8 @@ import com.michaelkatan.tmdbapp.controllers.RetroController
 import com.michaelkatan.tmdbapp.interfaces.RequestListener
 import com.michaelkatan.tmdbapp.models.Result
 import kotlinx.android.synthetic.main.main_search_fragment.*
-import kotlinx.coroutines.*
+
+
 
 class MainSearchScreen : Fragment()
 {
@@ -57,21 +58,9 @@ class MainSearchScreen : Fragment()
 
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
-    {
-        val view = inflater.inflate(R.layout.main_search_fragment,container,false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.main_search_fragment, container, false)
 
         return view
     }
-
-    suspend fun changeTv()
-    {
-        runBlocking {
-            launch (Dispatchers.Main){
-
-            }
-        }
-
-    }
-
 }
