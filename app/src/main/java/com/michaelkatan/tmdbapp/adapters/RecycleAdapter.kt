@@ -1,4 +1,4 @@
-package com.michaelkatan.tmdbapp
+package com.michaelkatan.tmdbapp.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.bumptech.glide.Glide
-import com.michaelkatan.tmdbapp.R.id.result_movie_name
-import com.michaelkatan.tmdbapp.R.id.result_poster
+import com.michaelkatan.tmdbapp.R
+import com.michaelkatan.tmdbapp.R.id.*
 import com.michaelkatan.tmdbapp.models.Result
 
 
@@ -38,5 +37,6 @@ class RecycleAdapter(val items: Array<Result>) : RecyclerView.Adapter<RecycleAda
     {
         val moviePosterImage = result_poster as ImageView
         val movieTitle = result_movie_name as TextView
+        val movieDescription = result_movie_description as TextView
     }
 }

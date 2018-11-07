@@ -12,6 +12,6 @@ interface DataRequest
     fun getMovies(@Query("api_key") apiKey: String, @Query("query") query : String,
                   @Query("region")region: String = "", @Query("year") year: Int = 0): retrofit2.Call<Request>
 
-    
+
 
 }
