@@ -26,7 +26,7 @@ class showResultsFragment: Fragment()
     {
         val bundle = arguments
         val data = bundle?.getSerializable("data") as Array<Result>
-        val recycleAdapter = RecycleAdapter(data)
+        val recycleAdapter = RecycleAdapter(data, view.context)
 
         search_result_recycleView.adapter = recycleAdapter
         search_result_recycleView.layoutManager = LinearLayoutManager(context)

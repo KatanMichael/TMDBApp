@@ -6,13 +6,6 @@
               android:background="@color/grey_10"
               android:orientation="vertical">
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/testingCo"
-            android:textSize="20sp"
-            android:text="Just Testing Stuff"
-    />
 
     <RelativeLayout
             android:layout_width="match_parent"
